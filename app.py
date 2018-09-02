@@ -10,7 +10,7 @@ bottle.debug(True)
 def index():
     return "<h1>Halló heimur á Heroku hýsingu og Github geymslu</h1>"
 
-bottle.run(host='0.0.0.0', port=argv[1])
+run(host='0.0.0.0', port=argv[1])
 
 # if os.environ.get('APP_LOCATION') == 'heroku':	 
 #    bottle.run(host='0.0.0.0', port=argv[1])
