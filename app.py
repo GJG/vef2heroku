@@ -10,6 +10,12 @@ bottle.debug(True)
 
 @get('/')
 def index():
-    return "Hallo Heimur í Heroku og Github"
+    return "Halló heimur á Heroku hýsingu og Github geymslu"
 
-bottle.run(host='0.0.0.0', port=argv[1])
+
+
+if os.environ.get('APP_LOCATION') == 'heroku':
+	bottle.run(host='0.0.0.0', port=argv[1])
+#    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+else:
+    run(host='localhost', port=8080, debug=True)
