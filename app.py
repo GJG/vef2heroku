@@ -10,7 +10,7 @@ bottle.debug(True)
 
 @get('/')
 def index():
-    return "Halló heimur á Heroku hýsingu og Github geymslu"
+    return "<h1>Halló heimur á Heroku hýsingu og Github geymslu</h1>"
 
 
 
