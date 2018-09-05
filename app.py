@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 from sys import argv
 
 import bottle
@@ -14,7 +11,4 @@ def index():
 
 bottle.run(host='0.0.0.0', port=argv[1])
 
-# if os.environ.get('APP_LOCATION') == 'heroku':	 
-#    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-# else:
-#    run(host='localhost', port=8080, debug=True)
+# run(host='localhost', port=8080, debug=True)
